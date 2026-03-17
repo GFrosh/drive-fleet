@@ -9,7 +9,7 @@ import type {
 } from "@/types";
 import { SEED_USERS, SEED_CARS, SEED_BOOKINGS, SEED_REVIEWS } from "./mockData";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 /** ======================
  *  JWT + REQUEST HELPER
